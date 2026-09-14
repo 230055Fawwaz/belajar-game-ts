@@ -692,3 +692,184 @@ body {
   background: var(--accent-primary);
 }
 
+/* =======================================================================
+   SPACE DEFENDER (LEVEL 3) STYLES
+   ======================================================================= */
+.space-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.space-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .space-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.space-canvas-wrapper {
+  background: rgba(5, 7, 17, 0.95);
+  padding: 10px;
+  border-radius: 18px;
+  border: 2px solid rgba(6, 182, 212, 0.35);
+  box-shadow: 0 0 35px rgba(6, 182, 212, 0.18), 0 20px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-canvas {
+  display: block;
+  border-radius: 10px;
+  background: #050711;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.space-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.space-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.hud-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hud-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.hud-label {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.hud-val {
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: #06b6d4;
+}
+
+.hud-val.wave-val {
+  color: var(--accent-gold);
+}
+
+.shield-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.shield-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.shield-fill {
+  background: linear-gradient(90deg, #06b6d4, #38bdf8);
+}
+
+/* Pool Telemetry Card */
+.pool-telemetry-card {
+  background: rgba(99, 102, 241, 0.04);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.telemetry-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-primary-light);
+  margin-bottom: 0.35rem;
+}
+
+.telemetry-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.telemetry-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.pool-stat-badge {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.pool-stat-badge b {
+  color: #a5f3fc;
+  font-size: 0.8rem;
+}
+
+/* Mobile & Virtual Shoot */
+.arcade-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.control-help {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+}
+
+.btn-shoot {
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(99, 102, 241, 0.2));
+  border-color: var(--accent-secondary);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.btn-shoot:hover {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.35), rgba(99, 102, 241, 0.35));
+}
+
+
