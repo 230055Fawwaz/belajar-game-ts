@@ -2,8 +2,9 @@ import './style.css';
 import { HeroDuelUI } from './projects/01-hero-duel/ui';
 import { SnakeUI } from './projects/02-snake/ui';
 import { SpaceDefenderUI } from './projects/03-space-defender/ui';
+import { RoguelikeUI } from './projects/04-roguelike/ui';
 
-type ProjectId = '01-hero-duel' | '02-snake' | '03-space-defender';
+type ProjectId = '01-hero-duel' | '02-snake' | '03-space-defender' | '04-roguelike';
 
 function initializeApp(): void {
   const stage = document.getElementById('game-stage');
@@ -14,6 +15,7 @@ function initializeApp(): void {
 
   let currentSnakeUI: SnakeUI | null = null;
   let currentSpaceUI: SpaceDefenderUI | null = null;
+  let currentRogueUI: RoguelikeUI | null = null;
 
   const loadProject = (projectId: ProjectId): void => {
     // Bersihkan instance game aktif sebelumnya
@@ -25,6 +27,10 @@ function initializeApp(): void {
       currentSpaceUI.destroy();
       currentSpaceUI = null;
     }
+    if (currentRogueUI) {
+      currentRogueUI.destroy();
+      currentRogueUI = null;
+    }
 
     if (projectId === '01-hero-duel') {
       const heroDuel = new HeroDuelUI(stage);
@@ -35,6 +41,9 @@ function initializeApp(): void {
     } else if (projectId === '03-space-defender') {
       currentSpaceUI = new SpaceDefenderUI(stage);
       currentSpaceUI.render();
+    } else if (projectId === '04-roguelike') {
+      currentRogueUI = new RoguelikeUI(stage);
+      currentRogueUI.render();
     }
   };
 
