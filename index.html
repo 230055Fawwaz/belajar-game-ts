@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar TypeScript - Game Dev PBL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navbar / Hub Header -->
+      <header class="game-header">
+        <div class="logo-area">
+          <span class="badge">TypeScript PBL</span>
+          <h1 class="logo-title">🎮 Game Dev Lab</h1>
+        </div>
+        <nav class="project-nav" id="project-nav">
+          <button class="nav-btn active" data-project="01-hero-duel">
+            <span class="num">01</span> Hero Duel
+          </button>
+          <button class="nav-btn locked" title="Akan datang di Level 2">
+            <span class="num">02</span> Retro Snake
+          </button>
+          <button class="nav-btn locked" title="Akan datang di Level 3">
+            <span class="num">03</span> Space Defender
+          </button>
+          <button class="nav-btn locked" title="Akan datang di Level 4">
+            <span class="num">04</span> Mini Roguelike
+          </button>
+        </nav>
+      </header>
+
+      <!-- Main Stage Container -->
+      <main id="game-stage" class="game-stage">
+        <!-- Konten Proyek dimuat secara dinamis oleh main.ts -->
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
