@@ -7,7 +7,7 @@ Repositori pembelajaran **TypeScript** berbasis **Project-Based Learning (PBL)**
 ## 🗺️ Roadmap PBL
 
 - [x] **Level 1: Hero Duel Arena** (Fundamental TS: Types, Interfaces, Enums, Discriminated Unions, OOP)
-- [ ] **Level 2: Retro 2D Grid / Snake** (Canvas 2D API, Game Loop 60 FPS, Keyboard Events, Tuples)
+- [x] **Level 2: Retro 2D Grid / Snake** (Canvas 2D API, Game Loop 60 FPS, Keyboard Events, Tuples)
 - [ ] **Level 3: Space Defender** (Generics `<T>`, Abstract Classes, Object Pooling, Delta Time)
 - [ ] **Level 4: Mini Roguelike** (Finite State Machine, Exhaustive Checking `never`, Tile Mapping)
 
